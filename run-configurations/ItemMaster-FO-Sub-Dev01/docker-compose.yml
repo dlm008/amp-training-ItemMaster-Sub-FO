@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  ItemMaster-FO-Sub-Dev01:
+  item-master-fo-01-dev:
     image: ${CONTAINER_REGISTRY_URL}/${CONTAINER_IMAGE_REPOSITORY}:${CONTAINER_IMAGE_TAG}
     ports:
       - ${HOST_PORT_PREFIX}55:5555
@@ -14,5 +14,4 @@ services:
     environment:
       - SAG_IS_LICENSE_FILE=/tmp/license.xml
       - SAG_IS_CONFIG_PROPERTIES=/tmp/application.properties
-
 
